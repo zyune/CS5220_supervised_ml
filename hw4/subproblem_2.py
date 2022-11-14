@@ -22,3 +22,4 @@ for i in range(20):
 classifier = DecisionTreeClassifier(min_samples_split=2, max_depth=6)
 classifier.fit(X, y)
 classifier.print_tree()
+print('')
