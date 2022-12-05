@@ -5,8 +5,7 @@
 #  - back pass: gradients
 #  - update weights
 
-from re import I
-from statistics import mode
+
 import torch
 import torch.nn as nn
 import numpy as np
@@ -19,7 +18,7 @@ X_numpy, y_numpy = datasets.make_regression(
     n_samples=100, n_features=1, noise=20, random_state=1)
 X = torch.from_numpy(X_numpy.astype(np.float32))
 y = torch.from_numpy(y_numpy.astype(np.float32))
-print(y.shape)
+print(type(y))  # this is a tensor
 y = y.view(y.shape[0], 1)  # This is similar to reshape function
 print(y.shape)
 n_samples, n_feathers = X.shape
@@ -61,4 +60,7 @@ plt.plot(X_numpy, predicted, "b")
 plt.savefig("pytorch_lr_demo.png")
 
 # for me , sklearn is more like a black box, we input the parameter, and we got the result.
-# However when I use pytorch I feel like I'm doing the linear regression with the model, I feel like I have deeper understanding for models when I use pytorch, What's more is I feel like that pytorch has more flexibility than sklearn. It's definitely a better tool module for this course
+# However when I use pytorch I feel like I'm doing the linear regression with the model,
+# #I feel like I have deeper understanding for models when I use pytorch,
+# #What's more is I feel like that pytorch has more flexibility than sklearn.
+# #It's definitely a better tool module for doing homework this course
