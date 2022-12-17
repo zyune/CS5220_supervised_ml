@@ -3,7 +3,7 @@
 - https://towardsdatascience.com/epoch-vs-iterations-vs-batch-size-4dfb9c7ce9c9
 
 run `python close_form_function.py `
-![output](hw2/a.png)
+![output](a.png)
 
 ```
 Index(['x', 'y'], dtype='object')
@@ -25,10 +25,10 @@ np.dot(x.T, x) (2, 2)
 ```
 
 run `python sdg.py `
-![output](hw2/b.png)
+![output](b.png)
 
 run `python hw2/dierti.py`
-![output](hw2/2.png)
+![output](2.png)
 
 ```
 When polynomial =3 it works best
